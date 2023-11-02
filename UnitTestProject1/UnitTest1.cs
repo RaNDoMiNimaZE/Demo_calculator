@@ -19,11 +19,20 @@ namespace UnitTestProject1
             Assert.AreEqual(a + b, result);
         }
 
+        [TestMethod]
+        public void subtractTest()
+        {
+            int a = 2, b = 1;
+
+            int result = calculator.subtract(a, b);
+
+            Assert.AreEqual(a - b, result);
+        }
 
         [TestMethod]
         public void DivideTest()
         {
-            int a = 4, b = 0;
+            int a = 4, b = 1;
 
             int result = calculator.divide(a, b);
 

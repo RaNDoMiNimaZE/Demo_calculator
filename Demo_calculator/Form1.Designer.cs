@@ -36,6 +36,7 @@ namespace Demo_calculator
             this.button4 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.answerlabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -106,11 +107,21 @@ namespace Demo_calculator
             this.answerlabel.TabIndex = 7;
             this.answerlabel.Text = "Answer";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 120);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Result is";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 209);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.answerlabel);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button3);
@@ -134,6 +145,7 @@ namespace Demo_calculator
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label answerlabel;
+        private System.Windows.Forms.Label label1;
     }
 }
 
